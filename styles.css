@@ -1,0 +1,80 @@
+body {
+	font-family: Helvetica;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+	text-align: center;
+}
+
+.bgtop {
+	background-image: linear-gradient(to left bottom, #56C1FF, #73FDEA);
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	color: #FFFFFF;
+	text-shadow: 2px 2px 5px black;
+}
+
+.obs_title_container {
+	 width: 600px;
+	height: 170px;
+	margin: auto;
+	display:inline-block;
+		
+}
+
+.obs_logo{
+	float: left;
+	position: relative;
+	top: 7px;
+}
+
+.obs_apresentacao_titulo{
+  	 text-align: left;
+	padding-left: 110px;
+	padding-top: 10px;
+}
+
+.obs_descricao{ 
+	position:relative; 
+	left: 12px;
+	top: -10px;
+	text-align: justify;
+}
+
+.obs_download {
+  background-image: linear-gradient(to bottom right, #56C1FF, #0076BA);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.obs_passos_container{
+	position:relative;
+	top: 50px;
+width: 900px;
+	margin:auto;
+display:block;
+	text-align: justify;
+}
+
+.obs_fs_subtext{
+	
+	text-align: center;
+	position: relative;
+	top: -10px;
+	font-size: 13px;
+}
