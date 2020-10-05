@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/gravacao-obs.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+		 <link rel="stylesheet" type="text/css" href="css/lightbox.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/lightbox.js"></script>
 
     </head>
     <body>
@@ -68,26 +71,29 @@
 <a name="primeirospassos"></a> 
             <h2 class="obs_fs">Primeiros passos</h2>
             <p class="obs_fs_1"> Quando o OBS é iniciado pela primeira vez, o assistente de configuração aparecerá na tela. Caso ele não apareça, é possível abri-lo através do menu <strong>Ferramentas</strong>.</p>
-      <img src="media/gravacao-obs/obs1.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+      
+		<a href="media/gravacao-obs/obs1.png" data-lightbox="obs1"><img src="media/gravacao-obs/obs1.png" alt="" style="width:500px; display: block; margin: auto;"></a>
+		<p class="obs_fs_subtext" style="width:500px; margin: auto; position: relative; top: 7px;">Clique nas imagens para ampliá-las.</em></p>
             <br>
             <p class="obs_fs_1">O assistente de configuração fará uma série de perguntas para otimizar o funcionamento do programa, de acordo com o hardware do computador e suas preferências pessoais.</p>
             <p class="obs_fs_1">A primeira pergunta será a respeito do uso primário do programa. No nosso caso, selecionaremos a segunda opção, <strong>Otimizar somente para gravação, eu não farei transmissão</strong>.</p>
-            <img src="media/gravacao-obs/obs2.png" alt="" style="width:400px; display: block; margin: auto;">
+		<a href="media/gravacao-obs/obs2.png" data-lightbox="obs2"><img src="media/gravacao-obs/obs2.png" alt="" style="width:400px; display: block; margin: auto;"></a>
+            
             <br>
             <p class="obs_fs_1">Em seguida, o programa perguntará sobre alguns aspectos da gravação de vídeo.</p>
             <p class="obs_fs_1">A opção de resolução de base (tela) rege o tamanho do arquivo final em pixels. O ideal é que esta opção coincida com a resolução atual do seu monitor, portanto, selecione a opção <strong>Usar Atual</strong>.</p>
             <p class="obs_fs_1">FPS é a sigla em inglês para Quadros Por Segundo. Números maiores produzirão vídeos com movimentação mais suave, porém, o arquivo final terá um tamanho maior. O valor recomendado é 30, por ser um intermediário entre fluidez e tamanho.</p>
-            <img src="media/gravacao-obs/obs3.png" alt="" style="width:400px; display: block; margin: auto;">
+           <a href="media/gravacao-obs/obs3.png" data-lightbox="obs3"><img src="media/gravacao-obs/obs3.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <br>
             <p class="obs_fs_1">Nesta última tela, o assistente de configuração exibirá as configurações que serão aplicadas. Basta clicar em <strong>Aplicar Configurações para continuar</strong>.</p>
-            <img src="media/gravacao-obs/obs4.png" alt="" style="width:400px; display: block; margin: auto;">
+<a href="media/gravacao-obs/obs4.png" data-lightbox="obs4"><img src="media/gravacao-obs/obs4.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <p class="obs_fs_subtext"><em>Os valores podem ser diferentes no seu computador.</em></p>
 		<br><hr><br>
 		
 <a name="explorandoainterface"></a> 
             <h2 class="obs_fs">Explorando a interface</h2>
             <div class="obs5">
-                <img src="media/gravacao-obs/obs5.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+                <img class="imagem" src="media/gravacao-obs/obs5.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
                 <div class="obs_obs5_circle" id="obs_obs5_visualizacao"><strong>1</strong></div>
                 <div class="obs_obs5_circle" id="obs_obs5_cenas"><strong>2</strong></div>
                 <div class="obs_obs5_circle" id="obs_obs5_fontes"><strong>3</strong></div>
@@ -108,21 +114,24 @@
 			<h2 class="obs_fs">Explorando a interface – Seletor de fontes</h2>
       <p class="obs_fs_1">Antes de podermos utilizar as outras opções da interface, precisamos adicionar uma fonte de vídeo para capturar. Para fazer isto, basta clicar no <strong>botão +</strong> &nbsp;do <strong>seletor de fontes</strong> (3). Várias opções aparecerão.</p>
 			
-            <img src="media/gravacao-obs/obs6.png" alt="" style="width:400px; display: block; margin: auto;">
+		
+		<a href="media/gravacao-obs/obs6.png" data-lightbox="obs6"><img src="media/gravacao-obs/obs6.png" alt="" style="width:300px; display: block; margin: auto;"></a>
+		
+            
             <p class="obs_fs_1"> Vamos, primeiro, selecionar a opção <strong>Captura de tela</strong>, para que toda a tela do computador seja gravada. Posteriormente será ensinado como gravar uma janela específica. </p>
 			
             <p class="obs_fs_1"> Na janela que surgirá, certifique-se de que as opções <strong>Criar Nova</strong> e <strong>Tornar a Fonte visível</strong> estão ativadas, depois, clique em <strong>Ok</strong>.</p>
 			
-            <img src="media/gravacao-obs/obs7.png" alt="" style="width:300px; display: block; margin: auto;">
+          <a href="media/gravacao-obs/obs7.png" data-lightbox="obs7">  <img src="media/gravacao-obs/obs7.png" alt="" style="width:300px; display: block; margin: auto;"> </a>
             <br>
 			
             <p class="obs_fs_1">Na próxima janela que será aberta, selecione o monitor que você deseja gravar e marque a caixa <strong>Capturar o Cursor</strong> caso queira que o cursor do mouse apareça na gravação.</p>
 			
-            <img src="media/gravacao-obs/obs8.png" alt="" style="width:700px; display: block; margin: auto;">
+           <a href="media/gravacao-obs/obs8.png" data-lightbox="obs8"> <img src="media/gravacao-obs/obs8.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <br>
 			
             <p class="obs_fs_1">A fonte <strong>Captura de tela</strong> aparecerá na <strong>área de pré-visualização</strong> (1). Você pode arrastá-la para mudar sua posição ou utilizar os pontos vermelhos para ajustar o seu tamanho.</p>
-            <img src="media/gravacao-obs/obs9.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+            <a href="media/gravacao-obs/obs9.png" data-lightbox="obs9"><img src="media/gravacao-obs/obs9.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <br>
 			<hr>
 		
@@ -133,34 +142,34 @@
 			
             <p class="obs_fs_1">Clique no <strong>botão +</strong>&nbsp;do <strong>seletor de cenas</strong> (2). Um diálogo pedindo um nome aparecerá. Daremos o nome "Captura de janela" para a cena.</p>
 			
-            <img src="media/gravacao-obs/obs10.png" alt="" style="width:700px; display: block; margin: auto;">
+            <a href="media/gravacao-obs/obs10.png" data-lightbox="obs10"><img src="media/gravacao-obs/obs10.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <br>
 			
             <p class="obs_fs_1">Note que a visualização da tela do computador desapareceu. </p>
 			
             <p class="obs_fs_1">Vamos experimentar mais um pouco, criando uma fonte de <strong>Captura de janela</strong>. Para fazer isto, clique no <strong>botão +</strong> do <strong>seletor de fontes </strong>(2).</p>
 			
-            <img src="media/gravacao-obs/obs6.png" alt="" style="width:400px; display: block; margin: auto;">
+            <a href="media/gravacao-obs/obs6.png" data-lightbox="obs6"><img src="media/gravacao-obs/obs6.png" alt="" style="width:300px; display: block; margin: auto;"></a>
             <p class="obs_fs_1"> Na janela que surgirá, certifique-se de que as opções <strong>Criar Nova</strong> e <strong>Tornar a Fonte visível</strong> estão ativadas, depois, clique em <strong>Ok</strong>.</p>
 			
-            <img src="media/gravacao-obs/obs11.png" alt="" style="width:300px; display: block; margin: auto;">
+           <a href="media/gravacao-obs/obs11.png" data-lightbox="obs11"> <img src="media/gravacao-obs/obs11.png" alt="" style="width:300px; display: block; margin: auto;"></a>
             <p class="obs_fs_1">Na próxima janela que será aberta, utilize a caixa de seleção da opção <strong>Janela</strong> para indicar a janela que você deseja gravar. As demais opções podem ser deixadas em seus respectivos valores padrão. Clique em <strong>Ok</strong> quando tudo estiver pronto.</p>
-            <img src="media/gravacao-obs/obs12.png" alt="" style="width:700px; display: block; margin: auto;">
+           <a href="media/gravacao-obs/obs12.png" data-lightbox="obs12" data-title="Uma fonte de captura de janela exibindo uma janela do Google Chrome. Note o [chrome.exe] na caixa de seleção da opção Janela."> <img src="media/gravacao-obs/obs12.png" alt="" style="width:400px; display: block; margin: auto;"></a>
             <p class="obs_fs_subtext" style="width:500px; margin: auto; position: relative; top: 7px;"><em>Uma fonte de captura de janela exibindo uma janela do Google Chrome. Note o <strong>[chrome.exe]</strong> na caixa de seleção da opção <strong>Janela</strong>.</em></p>
             <br>
             <p class="obs_fs_1">A janela selecionada ganhará uma borda amarela e será adicionada à área de pré-visualização.</p>
-            <img src="media/gravacao-obs/obs13.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+            <a href="media/gravacao-obs/obs13.png" data-lightbox="obs13">  <img src="media/gravacao-obs/obs13.png" alt="" style="width:500px; display: block; margin: auto;"></a><br>
             <p class="obs_fs_1">Para alterar a seleção de janela, clique nas <strong>Propridades</strong> <em class="material-icons" style="font-size: 15px">settings</em> (1) da fonte ou utilize a aba de acesso rápido (2).</p>
-            <img src="media/gravacao-obs/obs14.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+             <a href="media/gravacao-obs/obs14.png" data-lightbox="obs14"> <img src="media/gravacao-obs/obs14.png" alt="" style="width:700px; display: block; margin: auto;"></a><br>
 		<p class="obs_fs_1">Para voltar a capturar a tela inteira, utilize o <strong>seletor de cenas</strong>.</p>
-	  <img src="media/gravacao-obs/obs15.png" alt="" style="width:150px; display: block; margin: auto;">
+	<a href="media/gravacao-obs/obs15.png" data-lightbox="obs15"> <img src="media/gravacao-obs/obs15.png" alt="" style="width:150px; display: block; margin: auto;"></a>
 		<br><hr/>
 			<br>
 		
 <a name="explorandoainterface-mixerdeaudio"></a> 
 		<h2 class="obs_fs">Explorando a interface – Mixer de áudio</h2>
 			<p class="obs_fs_1">O mixer de áudio exibe, em tempo real, os sons do sistema e do microfone, permitindo, também, o ajuste do volume de ambos. Caso o som desejado não esteja aparecendo na barra de decibéis, clique na engrenagem (<em class="material-icons" style="font-size: 15px">settings</em>) do respectivo dispositivo e vá em <strong>Propriedades</strong> para selecionar o dispositivo correto.</p>
-		<img src="media/gravacao-obs/obs16.png" alt="" style="width:200px; display: block; margin: auto;">
+		 <a href="media/gravacao-obs/obs16.png" data-lightbox="obs16"> <img src="media/gravacao-obs/obs16.png" alt="" style="width:200px; display: block; margin: auto;"></a>
 				<br><hr/>
 			<br>
 		
@@ -175,14 +184,14 @@
 		
 		<p class="obs_fs_1">Nas <strong>configurações de áudio</strong>, certifique-se de que a <strong>taxa de amostragem</strong> é de <strong>44,1 kHz</strong>.</p>
 		
-		<img src="media/gravacao-obs/obs18.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+		 <a href="media/gravacao-obs/obs18.png" data-lightbox="obs18"> <img src="media/gravacao-obs/obs18.png" alt="" style="width:500px; display: block; margin: auto;"></a><br>
 		
 		<p class="obs_fs_1">Nas <strong>configurações de saída</strong>, certifique-se de que a <strong>qualidade da gravação</strong> está configurada como <strong>Alta qualidade, tamanho médio</strong>. O <strong>formato de gravação</strong> deve ser <strong>mkv</strong>. </p>
 	  <p class="obs_fs_1">Nesta página você também pode conferir ou alterar o local de salvamento das gravações.</p>
 				<p class="obs_fs_1">Lembre-se, também, da <strong>Taxa de Bits do Vídeo</strong>, a primeira opção da página, pois podemos precisar dela mais tarde.</p>
 		
 		
-	  <img src="media/gravacao-obs/obs19.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+	 <a href="media/gravacao-obs/obs19.png" data-lightbox="obs19"><img src="media/gravacao-obs/obs19.png" alt="" style="width:500px; display: block; margin: auto;"></a><br>
 		
 		<br>
 		<hr>
@@ -194,11 +203,11 @@
 		<p class="obs_fs_1">Para gravar um vídeo, clique em <strong>Iniciar gravação</strong> na <strong>seção de controles</strong>.</p>
 		
 		
-		<img src="media/gravacao-obs/obs17.png" alt="" style="width:250px; display: block; margin: auto;">
+		 <a href="media/gravacao-obs/obs17.png" data-lightbox="obs17"> <img src="media/gravacao-obs/obs17.png" alt="" style="width:250px; display: block; margin: auto;"></a>
 		<br>
 		<p class="obs_fs_1">O botão de iniciar gravação será substituído pelos botões de interrupção e pausa.</p>
 		
-		<img src="media/gravacao-obs/obs20.png" alt="" style="width:250px; display: block; margin: auto;">
+		 <a href="media/gravacao-obs/obs20.png" data-lightbox="obs20"> <img src="media/gravacao-obs/obs20.png" alt="" style="width:250px; display: block; margin: auto;"></a>
 		
 	  <p class="obs_fs_1">Mexa no computador por alguns minutos, enquanto a gravação está em curso. Depois, interrompa a gravação e abra o arquivo que foi criado.</p>
 		<p class="obs_fs_1"><em>Caso você não consiga abrir o arquivo .mkv, <a href="https://www.videolan.org/vlc/">faça o download do VLC</a>.</em></p>
