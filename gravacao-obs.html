@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/gravacao-obs.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+		<div id="page-container"><div id="content-wrap">
+        <section class="bgtop" id="bgtop">
+            <h2 class="bgtop_title">Gravação e edição de vídeos </h2>
+            <p class="bgtop_subtitle">Um guia rápido e prático</p>
+			
+				
+	<div class="table"> 	 <div class="row">
+  <div class="column">
+    <button class="bgtop_button" id="rec_obs">Gravando com o OBS</button> 
+  </div>
+		
+  <div class="column">
+    <button class="bgtop_button" id="rec_scr">Gravando com o ScreenFlow</button>
+  </div>
+		
+</div> <br><br><br>
+	<div class="row">
+		<div class="column">
+    <button class="bgtop_button" id="edi_opn">Editando com o OpenShot</button> 
+  </div>
+		
+  <div class="column">
+    <button class="bgtop_button" id="edi_scr">Editando com o ScreenFlow</button>
+  </div>
+		
+</div> 
+	
+	</div>
+			
+        </section>
+        <div class="obs_title_container">
+            <p class="obs_logo"><img src="media/obs_logo.png" alt="" style="width:100px;"></p>
+            <h2 class="obs_apresentacao_titulo">Open Broadcast Software</h2>
+            <p class="obs_descricao">O OBS Studio é um software gratuito e de código aberto para gravação de vídeo e transmissão em tempo real, disponível para Windows, macOS e Linux.</p>
+            <button class="obs_download">Baixar OBS</button>
+        </div>
+    <div class="obs_passos_container">
+
+		<h2 class="obs_fs">Sumário</h2>
+		
+		 <ul>
+			 
+  <li><a href="#primeirospassos" class="sumario">Primeiros passos</a></li>
+			 <li><a href="#explorandoainterface" class="sumario">Explorando a interface</a></li>
+			 <ul>
+				 <li><a href="#explorandoainterface-seletordefontes" class="sumario">Seletor de fontes</a></li>
+				 <li><a href="#explorandoainterface-seletordecenas" class="sumario">Seletor de cenas</a></li>
+				 <li><a href="#explorandoainterface-mixerdeaudio" class="sumario">Mixer de áudio</a></li>
+        </ul>
+  <li><a href="#ajustandoasconfiguracoes" class="sumario">Ajustando as configurações</a></li>
+			 <li><a href="#gravandoumvideo" class="sumario">Gravando um vídeo</a></li>
+</ul> 
+
+		<br>
+		<hr>
+		<br>
+		
+<a name="primeirospassos"></a> 
+            <h2 class="obs_fs">Primeiros passos</h2>
+            <p class="obs_fs_1"> Quando o OBS é iniciado pela primeira vez, o assistente de configuração aparecerá na tela. Caso ele não apareça, é possível abri-lo através do menu <strong>Ferramentas</strong>.</p>
+      <img src="media/gravacao-obs/obs1.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+            <br>
+            <p class="obs_fs_1">O assistente de configuração fará uma série de perguntas para otimizar o funcionamento do programa, de acordo com o hardware do computador e suas preferências pessoais.</p>
+            <p class="obs_fs_1">A primeira pergunta será a respeito do uso primário do programa. No nosso caso, selecionaremos a segunda opção, <strong>Otimizar somente para gravação, eu não farei transmissão</strong>.</p>
+            <img src="media/gravacao-obs/obs2.png" alt="" style="width:400px; display: block; margin: auto;">
+            <br>
+            <p class="obs_fs_1">Em seguida, o programa perguntará sobre alguns aspectos da gravação de vídeo.</p>
+            <p class="obs_fs_1">A opção de resolução de base (tela) rege o tamanho do arquivo final em pixels. O ideal é que esta opção coincida com a resolução atual do seu monitor, portanto, selecione a opção <strong>Usar Atual</strong>.</p>
+            <p class="obs_fs_1">FPS é a sigla em inglês para Quadros Por Segundo. Números maiores produzirão vídeos com movimentação mais suave, porém, o arquivo final terá um tamanho maior. O valor recomendado é 30, por ser um intermediário entre fluidez e tamanho.</p>
+            <img src="media/gravacao-obs/obs3.png" alt="" style="width:400px; display: block; margin: auto;">
+            <br>
+            <p class="obs_fs_1">Nesta última tela, o assistente de configuração exibirá as configurações que serão aplicadas. Basta clicar em <strong>Aplicar Configurações para continuar</strong>.</p>
+            <img src="media/gravacao-obs/obs4.png" alt="" style="width:400px; display: block; margin: auto;">
+            <p class="obs_fs_subtext"><em>Os valores podem ser diferentes no seu computador.</em></p>
+		<br><hr><br>
+		
+<a name="explorandoainterface"></a> 
+            <h2 class="obs_fs">Explorando a interface</h2>
+            <div class="obs5">
+                <img src="media/gravacao-obs/obs5.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+                <div class="obs_obs5_circle" id="obs_obs5_visualizacao"><strong>1</strong></div>
+                <div class="obs_obs5_circle" id="obs_obs5_cenas"><strong>2</strong></div>
+                <div class="obs_obs5_circle" id="obs_obs5_fontes"><strong>3</strong></div>
+                <div class="obs_obs5_circle" id="obs_obs5_mixer"><strong>4</strong></div>
+                <div class="obs_obs5_circle" id="obs_obs5_controles"><strong>5</strong></div>
+            </div>
+            <div>
+                <ol>
+                    <li>Área de pré-visualização</li>
+                    <li>Seletor de cenas</li>
+                    <li>Seletor de fontes</li>
+                    <li>Mixer de áudio</li>
+                    <li>Seção de controles</li>
+                </ol>
+            </div>
+		
+<a name="explorandoainterface-seletordefontes"></a> 
+			<h2 class="obs_fs">Explorando a interface – Seletor de fontes</h2>
+      <p class="obs_fs_1">Antes de podermos utilizar as outras opções da interface, precisamos adicionar uma fonte de vídeo para capturar. Para fazer isto, basta clicar no <strong>botão +</strong> &nbsp;do <strong>seletor de fontes</strong> (3). Várias opções aparecerão.</p>
+			
+            <img src="media/gravacao-obs/obs6.png" alt="" style="width:400px; display: block; margin: auto;">
+            <p class="obs_fs_1"> Vamos, primeiro, selecionar a opção <strong>Captura de tela</strong>, para que toda a tela do computador seja gravada. Posteriormente será ensinado como gravar uma janela específica. </p>
+			
+            <p class="obs_fs_1"> Na janela que surgirá, certifique-se de que as opções <strong>Criar Nova</strong> e <strong>Tornar a Fonte visível</strong> estão ativadas, depois, clique em <strong>Ok</strong>.</p>
+			
+            <img src="media/gravacao-obs/obs7.png" alt="" style="width:300px; display: block; margin: auto;">
+            <br>
+			
+            <p class="obs_fs_1">Na próxima janela que será aberta, selecione o monitor que você deseja gravar e marque a caixa <strong>Capturar o Cursor</strong> caso queira que o cursor do mouse apareça na gravação.</p>
+			
+            <img src="media/gravacao-obs/obs8.png" alt="" style="width:700px; display: block; margin: auto;">
+            <br>
+			
+            <p class="obs_fs_1">A fonte <strong>Captura de tela</strong> aparecerá na <strong>área de pré-visualização</strong> (1). Você pode arrastá-la para mudar sua posição ou utilizar os pontos vermelhos para ajustar o seu tamanho.</p>
+            <img src="media/gravacao-obs/obs9.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;">
+            <br>
+			<hr>
+		
+<a name="explorandoainterface-seletordecenas"></a> 
+		<h2 class="obs_fs">Explorando a interface – Seletor de cenas</h2>
+		
+      <p class="obs_fs_1">Cenas podem ser utilizadas para alternar rapidamente entre diferentes fontes de vídeo. Vamos criar uma cena para melhor enteder o seu funcionamento.</p>
+			
+            <p class="obs_fs_1">Clique no <strong>botão +</strong>&nbsp;do <strong>seletor de cenas</strong> (2). Um diálogo pedindo um nome aparecerá. Daremos o nome "Captura de janela" para a cena.</p>
+			
+            <img src="media/gravacao-obs/obs10.png" alt="" style="width:700px; display: block; margin: auto;">
+            <br>
+			
+            <p class="obs_fs_1">Note que a visualização da tela do computador desapareceu. </p>
+			
+            <p class="obs_fs_1">Vamos experimentar mais um pouco, criando uma fonte de <strong>Captura de janela</strong>. Para fazer isto, clique no <strong>botão +</strong> do <strong>seletor de fontes </strong>(2).</p>
+			
+            <img src="media/gravacao-obs/obs6.png" alt="" style="width:400px; display: block; margin: auto;">
+            <p class="obs_fs_1"> Na janela que surgirá, certifique-se de que as opções <strong>Criar Nova</strong> e <strong>Tornar a Fonte visível</strong> estão ativadas, depois, clique em <strong>Ok</strong>.</p>
+			
+            <img src="media/gravacao-obs/obs11.png" alt="" style="width:300px; display: block; margin: auto;">
+            <p class="obs_fs_1">Na próxima janela que será aberta, utilize a caixa de seleção da opção <strong>Janela</strong> para indicar a janela que você deseja gravar. As demais opções podem ser deixadas em seus respectivos valores padrão. Clique em <strong>Ok</strong> quando tudo estiver pronto.</p>
+            <img src="media/gravacao-obs/obs12.png" alt="" style="width:700px; display: block; margin: auto;">
+            <p class="obs_fs_subtext" style="width:500px; margin: auto; position: relative; top: 7px;"><em>Uma fonte de captura de janela exibindo uma janela do Google Chrome. Note o <strong>[chrome.exe]</strong> na caixa de seleção da opção <strong>Janela</strong>.</em></p>
+            <br>
+            <p class="obs_fs_1">A janela selecionada ganhará uma borda amarela e será adicionada à área de pré-visualização.</p>
+            <img src="media/gravacao-obs/obs13.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+            <p class="obs_fs_1">Para alterar a seleção de janela, clique nas <strong>Propridades</strong> <em class="material-icons" style="font-size: 15px">settings</em> (1) da fonte ou utilize a aba de acesso rápido (2).</p>
+            <img src="media/gravacao-obs/obs14.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+		<p class="obs_fs_1">Para voltar a capturar a tela inteira, utilize o <strong>seletor de cenas</strong>.</p>
+	  <img src="media/gravacao-obs/obs15.png" alt="" style="width:150px; display: block; margin: auto;">
+		<br><hr/>
+			<br>
+		
+<a name="explorandoainterface-mixerdeaudio"></a> 
+		<h2 class="obs_fs">Explorando a interface – Mixer de áudio</h2>
+			<p class="obs_fs_1">O mixer de áudio exibe, em tempo real, os sons do sistema e do microfone, permitindo, também, o ajuste do volume de ambos. Caso o som desejado não esteja aparecendo na barra de decibéis, clique na engrenagem (<em class="material-icons" style="font-size: 15px">settings</em>) do respectivo dispositivo e vá em <strong>Propriedades</strong> para selecionar o dispositivo correto.</p>
+		<img src="media/gravacao-obs/obs16.png" alt="" style="width:200px; display: block; margin: auto;">
+				<br><hr/>
+			<br>
+		
+<a name="ajustandoasconfiguracoes"></a> 
+		<h2 class="obs_fs">Ajustando as configurações</h2>
+		
+		
+	  <p class="obs_fs_1">Não há muito mais a ser configurado, portanto, revisaremos algumas opções.</p>
+		<p class="obs_fs_1">Abra as <strong>Configurações</strong> na <strong>seção de controles</strong>.</p>
+		
+		<img src="media/gravacao-obs/obs17.png" alt="" style="width:250px; display: block; margin: auto;">
+		
+		<p class="obs_fs_1">Nas <strong>configurações de áudio</strong>, certifique-se de que a <strong>taxa de amostragem</strong> é de <strong>44,1 kHz</strong>.</p>
+		
+		<img src="media/gravacao-obs/obs18.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+		
+		<p class="obs_fs_1">Nas <strong>configurações de saída</strong>, certifique-se de que a <strong>qualidade da gravação</strong> está configurada como <strong>Alta qualidade, tamanho médio</strong>. O <strong>formato de gravação</strong> deve ser <strong>mkv</strong>. </p>
+	  <p class="obs_fs_1">Nesta página você também pode conferir ou alterar o local de salvamento das gravações.</p>
+				<p class="obs_fs_1">Lembre-se, também, da <strong>Taxa de Bits do Vídeo</strong>, a primeira opção da página, pois podemos precisar dela mais tarde.</p>
+		
+		
+	  <img src="media/gravacao-obs/obs19.png" alt="" style="width:1000px; display: block; margin: auto; position: relative; left: -50px;"><br>
+		
+		<br>
+		<hr>
+		<br>
+		
+<a name="gravandoumvideo"></a> 
+		<h2 class="obs_fs">Gravando um vídeo</h2>
+	  <p class="obs_fs_1">Com tudo configurado, podemos gravar um vídeo para verificar se está tudo em ordem.</p>
+		<p class="obs_fs_1">Para gravar um vídeo, clique em <strong>Iniciar gravação</strong> na <strong>seção de controles</strong>.</p>
+		
+		
+		<img src="media/gravacao-obs/obs17.png" alt="" style="width:250px; display: block; margin: auto;">
+		<br>
+		<p class="obs_fs_1">O botão de iniciar gravação será substituído pelos botões de interrupção e pausa.</p>
+		
+		<img src="media/gravacao-obs/obs20.png" alt="" style="width:250px; display: block; margin: auto;">
+		
+	  <p class="obs_fs_1">Mexa no computador por alguns minutos, enquanto a gravação está em curso. Depois, interrompa a gravação e abra o arquivo que foi criado.</p>
+		<p class="obs_fs_1"><em>Caso você não consiga abrir o arquivo .mkv, <a href="https://www.videolan.org/vlc/">faça o download do VLC</a>.</em></p>
+		<p class="obs_fs_1"><br>Analise a gravação e veja se a imagem está com uma boa qualidade. <br><br>Caso a imagem tenha saído quadriculada, borrada ou estranha, tente ajustar a <strong>Taxa de Bits do Vídeo</strong> nas <strong>configurações de Saída</strong>.<br>
+	    O ideal é que a <strong>Taxa de Bits do Vídeo</strong> tenha um valor <strong>entre 2500 e 10000 Kbps</strong>. Experimente aumentar este valor de mil em mil (se estava 2500, tente 3500) até que a imagem saia como o desejado. <br> Lembre-se de que valores maiores produzirão arquivos maiores!</p>
+		
+      </div></div><footer id="footer">
+  <p>Em caso de dúvidas, entre em contato através do e-mail <strong>renan.yudi(arroba)unesp.br</strong></p>
+</footer> </div>
+		
+
+	
+    </body>
+	
+	
+
+</html>
+
