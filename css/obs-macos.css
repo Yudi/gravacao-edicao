@@ -1,0 +1,39 @@
+.obs_passos_container{
+	position:relative;
+	top: 50px;
+width: 900px;
+	margin:auto;
+display:block;
+	text-align: justify;
+}
+
+.obs_download {
+  background-image: linear-gradient(to bottom right, #56C1FF, #0076BA);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+		width:370px
+}
+
+.obs_fs_subtext{
+	
+	text-align: center;
+	position: relative;
+	top: -10px;
+	font-size: 13px;
+}
+
+#button2{
+  position: relative;
+    top: 60px;
+
+
+}
