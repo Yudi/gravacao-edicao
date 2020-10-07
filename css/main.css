@@ -15,8 +15,8 @@ body {
 	bottom: 0;
   width: 100%;
 height:50px;
-  background-color: #555555;
-  color: white;
+  background-color: #B3B3B3;
+  color: black;
   text-align: center;
 	line-height: -50px; 
 	font-family: Helvetica;
@@ -79,21 +79,6 @@ html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< Updated upstream
-
-a.buttonlink:link{
-	color: white;
-	text-decoration: none;
-}
-a.buttonlink:visited{
-	color: white;
-	text-decoration: none;
-}
-
-a.buttonlink:hover{
-	color: white;
-	text-decoration: none;
-=======
 a.sumario:link{
 	color: black;
 	text-decoration: none;
@@ -106,5 +91,4 @@ a.sumario:visited{
 a.sumario:hover{
 	color: black;
 	text-decoration: underline;
->>>>>>> Stashed changes
 }
