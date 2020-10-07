@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/obs-macos.css">
+			 <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/lightbox.js"></script>
+
+</head>
+
+<body>
+		<div id="page-container"><div id="content-wrap">
+<div class="bgtop">
+    <h2 id="bgtop_title">Gravação e edição de vídeos </h2>
+    <p id="bgtop_subtitle">Um guia rápido e prático</p>
+	
+	<div class="table"> 	 <div class="row">
+  <div class="column">
+    <button class="bgtop_button" id="rec_obs" onclick="location.href='./gravacao-obs.html'">Gravando com o OBS</button> 
+  </div>
+		
+  <div class="column">
+<button class="bgtop_button" id="rec_scr" onclick="location.href='./gravacao-screenflow.html'">Gravando com o ScreenFlow</button>
+  </div>
+		
+</div> <br><br><br>
+	<div class="row">
+		<div class="column">
+    <button class="bgtop_button" id="edi_opn" onclick="location.href='./edicao-openshot.html'">Editando com o OpenShot</button> 
+  </div>
+		
+  <div class="column">
+<button class="bgtop_button" id="edi_scr" onclick="location.href='./edicao-screenflow.html'">Editando com o ScreenFlow</button>
+
+  </div>
+		
+</div> 
+		<br><br><br>
+			<div class="row"><div class="column">
+    <button class="bgtop_button" id="obs_macos" onclick="location.href='./obs-macos.html'">Gravando o áudio do macOS com o OBS</button> 
+  </div><div class="column"></div>
+		</div> 
+	
+	</div>
+
+  </div>
+			
+			
+			
+			    <div class="obs_passos_container">
+							<h2 class="obs_fs">Índice</h2>
+		
+		 <ul>
+			 
+  <li><a href="#downloadeinstalacao" class="sumario">Download e instalação</a></li>
+			 <li><a href="#configuracaodeaudio" class="sumario">Configuração de áudio</a></li>
+
+				 <li><a href="#configurandooobs" class="sumario">Configurando o OBS</a></li>
+</ul> 
+					<br><hr><br>
+					<a href="downloadeinstalacao"></a>
+					<h2 class="obs_fs">Capturando áudio com o OBS e iShowU Audio Capture</h2>
+					<p class="obs_fs_1">Para que o OBS posa gravar o áudio do computador no macOS, é necessário instalar um segundo programa, o iShowU Audio Capture.</p>
+					<p class="obs_fs_1">Para baixar o iShowU Audio Capture, selecione um dos botões de download abaixo, de acordo com a versão do seu macOS.</p>
+				  <button class="obs_download" id="button1" onclick="location.href='https://downloads.shinywhitebox.com/driver/latest/';">Baixar para o macOS Mojave ou anterior</button>
+					
+				  <button class="obs_download" id="button2" onclick="location.href='https://downloads.shinywhitebox.com/driver/catalina/';">Baixar para o macOS Catalina</button>
+					
+			</div>
+			<div class="obs_passos_container" style="margin-top:80px"><p class="obs_fs_1">Não tem certeza sobre qual versão você está utilizando? <a href="https://support.apple.com/pt-br/HT201260">Clique aqui para saber como descobrir a  versão do seu macOS.</a></p><br>
+				
+				<p class="obs_fs_1">Após o download, abra o arquivo .dmg e execute o arquivo .pkg que está janela que será aberta. Atentamente, leia as instruções na tela.</p>
+				
+				<a href="media/obs-macos/obs2.png" data-lightbox="obs2"><img src="media/obs-macos/obs2.png" alt="" style="width:200px; display: block; margin: auto;"></a>
+					<p class="obs_fs_subtext" style="width:500px; margin: auto; position: relative; top: 7px;"><em>Clique nas imagens para ampliá-las.</em></p>
+				<p class="obs_fs_1">Após a instalação, pode ser que o programa precise de uma permissão de segurança para poder funcionar.<br>É possível conceder esta permissão em <strong>Preferências do sistema</strong> → <strong>Segurança e Privacidade</strong> → <strong>Geral</strong>. Quando for solicitado, <strong>NÃO</strong> reinicie o computador. Acompanhe as imagens:</p>
+			
+				<div class="row">
+  <div class="column">
+ <a href="media/obs-macos/obs3.png" data-lightbox="obs3"><img src="media/obs-macos/obs3.png" alt="" style="width:200px; display: block;  margin: auto;"></a>
+	  <p class="obs_fs_subtext" style="width:300px; margin: auto; position: relative; top: 7px; text-align: center;"><em>1. Aviso de extensão bloqueada</em></p>
+  </div>  <div class="column"><a href="media/obs-macos/obs1.png" data-lightbox="obs1"><img src="media/obs-macos/obs1.png" alt="" style="width:300px; display: block;"></a><p class="obs_fs_subtext" style="width:300px; margin: auto; position: relative; top: 7px; right: 70px; text-align: center"><em>2. Preferências do sistema</em></p><br> </div>
+
+		
+</div>
+				<div class="row"> <div class="column">	<a href="media/obs-macos/obs4.png" data-lightbox="obs4"><img src="media/obs-macos/obs4.png" alt="" style="width:300px; display: block; margin: auto;"></a><p class="obs_fs_subtext" style="width:300px; margin: auto; position: relative; top: 7px; text-align: center"><em>3. Segurança e privacidade</em></p>
+					</div><div class="column"><a href="media/obs-macos/obs5.png" data-lightbox="obs5"><img src="media/obs-macos/obs5.png" alt="" style="width:300px; display: block;"></a><p class="obs_fs_subtext" style="width:300px; margin: auto; position: relative; top: 7px; right: 70px; text-align: center"><em>4. Não reinicie o computador</em></p></div></div>
+				<br>
+				<p class="obs_fs_1"><strong>Espere a instalação ser finalizada e reinicie o seu computador logo em seguida.</strong></p>
+				
+				
+				
+
+				<br>
+				<hr><br>
+				<a href="configuracaodeaudio"></a>
+				<h2 class="obs_fs">Configuração de áudio</h2>
+				
+				<p class="obs_fs_1">Pesquise por <strong>Configuração de Áudio e MIDI</strong> no Spotlight (pressione <strong>⌘+Espaço</strong> para abri-lo).</p>
+				 <a href="media/obs-macos/obs6.png" data-lightbox="obs6"><img src="media/obs-macos/obs6.png" alt="" style="width:300px; display: block;  margin: auto;"></a>
+				
+				<p class="obs_fs_1">Em <strong>Configuração de Áudio e MIDI</strong>, clique no botão de adicionar novo dispositivo (+) e, depois, em Criar Dispositivo com Saída Múltipla</p>
+				<a href="media/obs-macos/obs7.png" data-lightbox="obs7"><img src="media/obs-macos/obs7.png" alt="" style="width:300px; display: block;  margin: auto;"></a>
+				<br>
+				<p class="obs_fs_1">No <strong>Dispositivo com Saída Múltipla</strong>, confira se o <strong>Dispositivo Principal</strong> são os <strong>Alto-falantes</strong> do computador, depois, marque as caixinhas dos <strong>Alto-falantes</strong> do computador e do <strong>iShowU Audio Capture</strong>.</p>
+				<a href="media/obs-macos/obs8.png" data-lightbox="obs8"><img src="media/obs-macos/obs8.png" alt="" style="width:300px; display: block;  margin: auto;"></a>
+				
+				<p class="obs_fs_1">Vamos mudar o dispositivo de saída de áudio do computador: <strong>Preferências do sistema</strong> → <strong>Som</strong> → <strong>Saída</strong>.</p>
+				
+				
+				<div class="row">
+  <div class="column">
+ <a href="media/obs-macos/obs9.png" data-lightbox="obs9"><img src="media/obs-macos/obs9.png" alt="" style="width:300px; display: block;  margin: auto;"></a>
+	  <p class="obs_fs_subtext" style="width:300px; margin: auto; position: relative; top: 7px; text-align: center;"><em>1. Preferências do sistema</em></p>
+  </div>  <div class="column"><a href="media/obs-macos/obs10.png" data-lightbox="obs10"><img src="media/obs-macos/obs10.png" alt="" style="width:300px; display: block;"></a><p class="obs_fs_subtext" style="width:400px; margin: auto; position: relative; top: 7px; right: 70px; text-align: center"><em>2. Selecione o <strong>Dispositivo com Saída Múltipla</strong> e marque a caixa <strong>Mostrar volume na barra de menus</strong></em></p><br> </div>
+
+					
+			
+		
+</div>
+				
+			<p class="obs_fs_1">Quando o <strong>Dispositivo com Saída Múltipla</strong> está selecionado, não é possível ajustar o volume do sistema. Mas, com a caixinha que marcamos anteriormente, fica mais fácil para alternar entre os dispositivos de saída. Note que há um novo ícone na barra na parte superior da tela. Ao clicar neste ícone, é possível selecionar os dispositivos de áudio:</p>	
+				<a href="media/obs-macos/obs11.png" data-lightbox="obs11"><img src="media/obs-macos/obs11.png" alt="" style="width:300px; display: block;  margin: auto;"></a>
+			<br>
+				<p class="obs_fs_1">Para ajustar o volume, basta selecionar os <strong>Alto-falantes</strong> do computador. <br>Lembre-se de que o OBS não gravará áudio se o <strong>Dispositivo com Saída Múltipla</strong> não estiver selecionado.</p>	
+					<br>
+				<hr><br>
+				<a href="configurandooobs"></a>
+				<h2 class="obs_fs">Configurando o OBS</h2>
+				
+				<p class="obs_fs_1">Abra o OBS e verifique se a captura de som do computador está funcionando:</p>	
+				<a href="media/obs-macos/obs12.png" data-lightbox="obs12"><img src="media/obs-macos/obs12.png" alt="" style="width:400px; display: block;  margin: auto;"></a>
+				<br>
+				<p class="obs_fs_1">Se o áudio não estiver sendo capturado, abra as configurações de áudio e defina o <strong>iShowU Audio Capture</strong> como o microfone secundário:</p>
+				<a href="media/obs-macos/obs13.png" data-lightbox="obs13"><img src="media/obs-macos/obs13.png" alt="" style="width:400px; display: block;  margin: auto;"></a>
+</div>
+			
+
+			
+			
+			
+			
+</div><footer id="footer">
+  <p>Em caso de dúvidas, entre em contato através do e-mail <strong>renan.yudi(arroba)unesp.br</strong></p>
+</footer>
+			</div>
+	
+</body>
+</html>
